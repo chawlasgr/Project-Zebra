@@ -4,20 +4,20 @@
         background-color:#000;
         border:0;
         margin-top: -0.5vh;
-        margin-left:25vw;
+        margin-left:26vw;
         width:8vw; 
         height: 5px;
         z-index: 6;
     }
     #circle{    
-        height:45vh;
-        width:45vh;
-        border-radius: 30vh;
+        height:320px;
+        width:320px;
+        border-radius: 250px;
         background-color: #66de90;
         z-index: 1;
         margin:0;
         margin-top: -20vh;
-        margin-left:14vw;
+        margin-left:15vw;
         position: absolute;
     }
     .home_page{
@@ -29,7 +29,7 @@
         text-align: left;
 		font-family: arial,helvetica;
 		color: #000;
-        margin-left:25vw;
+        margin-left:26vw;
 
     }
     .home_page h1{
@@ -42,6 +42,24 @@
     }
     .home_page p{
         font-size: 2em;
+    }
+    .home_topMenu ul{
+        position: absolute;
+        right:10vw;
+        top:5vh;
+    }
+    .home_topMenu ul li{
+        border: 0;
+        list-style: none;
+        display:inline;
+        font-size: 0.8em;
+        margin-left:10px;
+    }
+    .home_topMenu ul li a:visited{
+        color: black;
+    }
+    .home_topMenu ul li a{
+        color: black;
     }
     nav p{
         position: absolute;
@@ -68,6 +86,13 @@
         margin-left:10px;
         border-bottom: 1px solid black;
     }
+    nav ul li a:visited{
+        color: burlywood;
+    }
+    nav ul li a{
+        color: burlywood;
+    }
+    
 
     /*----Second Page---About Page css---*/
 
@@ -133,198 +158,477 @@
 
     .db_feedbox img{
         border-radius: 3px;
-        width:190px;
-        height:160px;
+        width:210px;
+        height:180px;
     }
     #hr_drb{
-        margin-top: 0;
-        margin-left: 0;
+        margin: 0;
         z-index: 6;
     }
 
 
-    /* ---------------- MEDIA QUERIES----------------------*/
+/* ------------------------------ MEDIA QUERIES----------------------------------------*/
+
     @media only screen and (min-width:1400px) {
-        body{
-            background-color: pink;
-        }
         .home_page{
             position: absolute;
-            top:25%;
+            top:23%;
         }
         .home_page>h1,h2,p{
         margin-left:30vw;
 
         }
         .home_page h1{
-            font-size: 9.5em;
+            font-size: 10em;
 
         }
         .home_page h2{
-            font-size: 6em;
+            font-size: 6.5em;
             margin-top: -3vh;
         }
         .home_page p{
             font-size: 2em;
         }  
-        #hp_hr{
-            margin-left: 30vw;
-        }
-        
-    } 
-@media only screen and (max-width:1199px) {
-        body{
-            background-color: blue;
-        }
-        .db_feedbox img{
-            border-radius: 3px;
-            width:160px;
-            height:145px;
-        } 
-        .third_page{
+        .home_topMenu ul li{
             font-size: 1em;
         }
+        #hp_hr{
+            margin-left: 30vw;
+        } 
+        
+        #circle{    
+            height:400px;
+            width:400px;
+            border-radius: 250px;
+            margin-left:15vw;
+        }
+        nav p{
+            font-size: 1em;
+        }
+        nav span img{
+            height:22px;
+            width:30px;
+        }
+        nav ul li{
+            font-size: 1em;
+        }
+        /*-------------  about page  -----------------*/
+        .second_page{
+        font-size: 1.3em;
+        }
+        .sp_exp_heading{
+            font-size: 1.3em;
+        }
+        .sp_exp_sub{
+            font-size: 1em;
+        }
+        .timeline img{
+            height:90px;
+            width:600px;
+            right: 0px;
+            bottom:5vh;
+        }
+        /*----Third Page---Project Page css---*/
+
+        .third_page{
+            font-size: 1.3em;
+        }
+        .tp_heading{
+            font-family: Raleway SemiBold;
+        }
         .project_sm_box{
-            height: 250px;
-            width: 250px;
-            border: 6px solid black;
+            height: 290px;
+            width: 290px;
         }
         .project_lg_box{
-            height: 250px;
-            width: 505px;
-            border: 6px solid black;
+            height: 290px;
+            width: 580px;
         }
+        /*----Fourth Page---Dribble Page css---*/
 
-    }
-    @media only screen and (max-width:991px) {
-        body{
-            background-color: red;
+        .db_feedbox img{
+            width:220px;
+            height:200px;
         }
-        #circle{    
-            height:25vh;
-            width:25vh;
-            border-radius: 30vh;
-            background-color: #66de90;
-            z-index: 1;
-            margin:0;
-            margin-top: -15vh;
-            margin-left:8vw;
-            position: absolute;
-        }
-        .home_page{
-            position: absolute;
-            top:22vh;
-            z-index: 200;
-        }
+    } 
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:1280px) {
+        /*  home page  */
+    
         .home_page>h1,h2,p{
-            margin-left:32vw;
+            margin-left:30vw;
 
         }
         .home_page h1{
-            margin-top: 13vh;
+            font-size: 120px;
 
         }
         .home_page h2{
-            margin-top: -2vh;
+            font-size:70px;
+            margin-top: -4vh;
+        }
+        .home_page p{
+            font-size: 28px;
+        }
+         
+        .home_topMenu ul li{
+            font-size: 13px;
+        }
+        #circle{    
+            height:360px;
+            width:360px;
+            margin-top: -20vh;
+            margin-left:16vw;
+        }
+        #hp_hr{
+            margin-left: 30vw;
+        } 
+        nav p{
+            font-size: 12px;
+        }
+        nav span img{
+            height:18px;
+            width:25px;
+        }
+        nav ul li{
+            font-size: 12px;
+        } 
+    /*-------------  about page  -----------------*/
+        .second_page{
+        font-size: 17px;
+        }
+        .sp_exp_heading{
+            font-size: 18px;
+        }
+        .sp_exp_sub{
+            font-size: 14px;
+        }
+        .timeline img{
+            height:80px;
+            width:550px;
+        }
+    /*----Third Page---Project Page css---*/
+
+        .third_page{
+            font-size: 18px;
+        }
+        
+        .project_sm_box{
+            height: 250px;
+            width: 260px;
+        }
+        .project_lg_box{
+            height: 250px;
+            width: 520px;
+            border: 6px solid black;
+        }
+        /*----Fourth Page---Dribble Page css---*/
+
+        .db_feedbox img{
+            width:200px;
+            height:200px;
+        }
+
+    }
+
+
+
+
+/*------------------------------------------------------------*/
+    @media only screen and (max-width:1060px) {
+        /*  home page  */
+    
+        .home_page>h1,h2,p{
+            margin-left:30vw;
+
+        }
+        .home_page h1{
+            margin-top: 10%;    
+            font-size: 120px;
+
+        }
+        .home_page h2{
+            font-size:70px;
+            margin-top: -4vh;
+        }
+        .home_page p{
+            font-size: 28px;
+        }
+         
+        .home_topMenu ul li{
+            font-size: 13px;
+        }
+        #circle{    
+            height:300px;
+            width:300px;
+            margin-top: -20vh;
+            margin-left:15vw;
+        }
+        #hp_hr{
+            margin-left: 30vw;
+        } 
+        nav p{
+            font-size: 12px;
+        }
+        nav span img{
+            height:18px;
+            width:25px;
+        }
+        nav ul li{
+            font-size: 12px;
         }
         .home_page hr{
             margin-left:32vw;
             width:10vh;
         }
+        /*-------------  about page  -----------------*/
+        .second_page{
+        font-size: 13px;
+        }
+        .sp_exp_heading{
+            font-size: 18px;
+        }
+        .sp_exp_sub{
+            font-size: 14px;
+        }
+        .timeline img{
+            height:70px;
+            width:400px;
+        }
         .db_feedbox img{
             border-radius: 3px;
             width:250px;
             height:150px;
-        }   
+        }  
+        /*----Third Page---Project Page css---*/
+
         .third_page{
-            font-size: 0.9em;
+            font-size: 18px;
         }
+        
         .project_sm_box{
             height: 220px;
-            width: 500px;
-            border: 6px solid black;
+            width: 194.5px;
         }
         .project_lg_box{
             height: 220px;
-            width: 500px;
-            border: 6px solid black;
-        }  
+            width: 390px;
+        }
+        /*----Fourth Page---Dribble Page css---*/
+
+        .db_feedbox img{
+            width:200px;
+            height:180px;
+        }
         #hr_drb{
             width:80px; 
             margin-left: 40%;
         }
     
     }
+
+
+
+
+
+/*------------------------------------------------------------------*/
     @media only screen and (max-width:767px) {
-        body{
-            background-color: orange;
-        }
-        .home_page{
-            position: absolute;
-            top:30%;
-        }
-        .home_page>h1,h2,p{
-        margin-left:25vw;
+       .home_page>h1,h2,p{
+            margin-left:30vw;
 
         }
         .home_page h1{
-            font-size: 4.5em;
+            margin-top: 10%;    
+            font-size: 70px;
 
         }
         .home_page h2{
-            font-size: 3em;
-            margin-top: -2vh;
+            font-size:50px;
+            margin-top: -4vh;
         }
         .home_page p{
-            font-size: 1em;
+            font-size: 20px;
         }
-    
-        .db_feedbox img{
-            border-radius: 3px;
+         
+        .home_topMenu ul li{
+            font-size: 13px;
+        }
+        #circle{    
+            height:200px;
             width:200px;
-            height:150px;
+            margin-top: -20vh;
+            margin-left:15vw;
+        }
+        #hp_hr{
+            margin-left: 30vw;
         } 
+        nav p{
+            font-size: 12px;
+        }
+        nav span img{
+            height:18px;
+            width:25px;
+        }
+        nav ul li{
+            font-size: 12px;
+        }
+        .home_page hr{
+            margin-left:32vw;
+            width:10vh;
+        }
+        /*-------------  about page  -----------------*/
+        .second_page{
+        font-size: 15px;
+            margin:0 30px;
+            text-align: center;
+        }
+        .sp_heading{
+            font-size: 13px;
+            margin-top: 7px;
+        }
+        .sp_exp_heading{
+            font-size: 18px;
+        }
+        .sp_exp_sub{
+            font-size: 11px;
+        }
+        .timeline img{
+            height:30px;
+            width:200px;
+            bottom: 2vh;
+        }
+        #hr_abt{
+            width:100px; 
+            margin-left: 100%;
+        }
+
+        #resume_btn{
+            color:white;
+            font-size: 10px;
+            font-family: Open Sans Semibold;
+            padding: 5px 15px;
+            border: 0;
+        }
+        /*-------projects-----------*/
+        .db_feedbox img{
+            width:250px;
+            height:150px;
+        }  
         .third_page{
             font-size: 0.9em;
         }
         .project_sm_box{
             height: 200px;
             width: 75vw;
-            border: 6px solid black;
         }
         .project_lg_box{
             height: 200px;
             width: 75vw;
-            border: 6px solid black;
         }  
         #hr_drb{
         width:80px; 
             margin-left: 40%;
         }
+        
+        /* --------------dribble---------*/
+        .db_feedbox img{
+            margin-left:-12vw;
+            width:80vw;
+            height:250px;
+        } 
     
     }
-    @media only screen and (max-width:320px) {
-        body{
-            background-color: green;
-        }
-        .home_page{
-            position: absolute;
-            top:25%;
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+    @media only screen and (max-width:410px) {
+        /*  home page  */
+    
+        .home_page>h1,h2,p{
+            margin-left:30vw;
+
         }
         .home_page h1{
-            font-size: 3.5em;
+            font-size: 50px;
+            margin-top: 15%;
 
         }
         .home_page h2{
-            font-size: 2em;
-            margin-top: -2vh;
+            font-size:30px;
+            margin-top: -4vh;
         }
         .home_page p{
-            font-size: 1em;
+            margin-top: -2vh;
+            font-size: 16px;
         }
-    
+        .home_topMenu ul{
+            top:2vh;
+        }
+        .home_topMenu ul li{
+            font-size: 8px;
+            margin-left:10px;
+        }
+        #circle{    
+            height:150px;
+            width:150px;
+            margin-top: -16vh;
+            margin-left:15vw;
+        }
+        #hp_hr{
+            margin-left: 30vw;
+        } 
+        nav p{
+            font-size: 8px;
+        }
+        nav span img{
+            height:14px;
+            width:20px;
+        }
+        nav ul li{
+            font-size: 8px;
+        } 
+        /*   about----*/
+        .second_page{
+        font-size: 10px;
+            margin:0 30px;
+            text-align: center;
+        }
+        .sp_heading{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+        .sp_exp_heading{
+            font-size: 16px;
+        }
+        .sp_exp_sub{
+            font-size: 10px;
+        }
+        .timeline img{
+            height:20px;
+            width:120px;
+            bottom: 2vh;
+        }
+        #hr_abt{
+            width:70px; 
+            height:3px;
+            margin-left: 100%;
+        }
+
+        #resume_btn{
+            font-size: 7.5px;
+            padding: 2px 8px;
+            border: 0;
+        }
         .db_feedbox img{
-            border-radius: 3px;
+            margin-left: -5vw;
             width:200px;
             height:150px;
             
@@ -344,6 +648,10 @@
         .project_lg_box{
             height: 150px;
             width: 75vw;
-          
-    
-    }
+        }
+        #hr_drb{
+            width:60px;
+            height:2px;
+            margin-left: 35%;
+        }
+}
